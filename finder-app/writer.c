@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     openlog("writer", LOG_PID, LOG_USER);
 
     if (argc != 3) {
-        fprintf(stderr, "Invalid number of arguments.\n 1) File Path. \n 2) String to be entered in this file.");
+        fprintf(stderr, "Invalid number of arguments.\n 1) File Path. \n 2) String to be entered in this file.\n");
         syslog(LOG_ERR, "Invalid number of arguments: %d", argc - 1);
         closelog();
         return 1;
